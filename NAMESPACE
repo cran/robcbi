@@ -1,0 +1,47 @@
+import(robeth)
+
+importFrom(graphics,plot, abline, close.screen, lines, text, rug, par, hist, legend, 
+      points, screen, split.screen)
+
+importFrom(stats,quantile, qnorm, formula, glm, glm.fit, family, binomial, stat.anova, 
+    model.frame, model.matrix, model.extract, model.weights,  deviance, resid, residuals,
+    fitted, predict, loess.smooth, pchisq, pf, qqnorm, density, ppoints, summary.lm,
+    dbinom, dpois, na.pass, predict.lm)
+importFrom(utils, menu)
+
+export(correl, covar, covar.cubinf, deviance.cubinf, family.cubinf, fits.compare)
+export(plot.fits.compare, print.fits.compare, cubinf, cubinf.control, plot.cubinf)
+export(predict.cubinf, print.cubinf, print.cubinf.i, print.summary.cubinf, QQline)
+export(print.glm.i, Rank, Rank.cubinf, residuals.cubinf, rscale, rscale.cubinf, weights)
+export(weights.cubinf, anova, add1, drop1, step)
+
+# used internally - not intended to be visible to users
+# export(bidon, sbidon, mmbidon, Sink, message.robeth, delfile)
+     
+S3method(covar, cubinf) 
+S3method(covar, glm) 
+# S3method(anova, GLMlist) 
+S3method(deviance, cubinf)
+S3method(family, cubinf)
+S3method(plot, cubinf) 
+S3method(plot, fits.compare) 
+S3method(print, fits.compare) 
+S3method(print, cubinf) 
+S3method(print, cubinf.i) 
+S3method(print, glm.i) 
+S3method(print, summary.cubinf) 
+S3method(predict, cubinf) 
+S3method(Rank, cubinf) 
+S3method(Rank, glm) 
+S3method(residuals, cubinf)
+S3method(rscale, cubinf) 
+S3method(rscale, glm) 
+S3method(summary, cubinf) 
+S3method(weights, cubinf) 
+S3method(weights, glm) 
+
+S3method(anova, cubinf) 
+S3method(add1,cubinf)
+S3method(drop1,cubinf)
+S3method(step,cubinf)
+
