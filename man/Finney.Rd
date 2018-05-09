@@ -2,14 +2,13 @@
 \alias{Finney}
 \docType{data}
 \title{
-Finney Data from 'Annals of Eugenics' 1947
+Finney data from 'Annals of Eugenics' 1947
 }
 \description{
  Finney data over 39 observations on occurence or not of vaso-constriction.
  The data were obtained in a study of the effect of the rate and volume 
- of air inspired on a transcient vaso-constriction in the skin of the 
- digits. 
- An R function, plotFdat, for plotting the variables is included in the list. 
+ of air inspired on a transcient vaso-constriction in the skin of the digits. 
+ The R function, plotFdat, for plotting the variables is included in the list. 
 }
 \usage{
 data(Finney)

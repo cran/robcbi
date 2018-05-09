@@ -5,11 +5,11 @@
 \alias{print.glm.i}
 
 \title{
-Print methods for class "cubinf", "cubinf.i", "summary.cubinf" or "glm.i"
+Print methods for objects of class "cubinf", "cubinf.i", "summary.cubinf" or "glm.i"
 }
 
 \description{
-Printing linear model fits of glm or cubinf class
+Printing linear model fits provided by glm or with method="cubinf"
 }
 \usage{
 \method{print}{cubinf}(x, ai = FALSE, ci = FALSE, A.mat = FALSE, ...)
@@ -21,21 +21,21 @@ Printing linear model fits of glm or cubinf class
 
 \arguments{
   \item{x}{
-  an object result of a call to \code{summary.cubinf} (first usage),
+  An object result of a call to \code{summary.cubinf} (first usage),
   to \code{glm} with method="cubinf" (second usage),
- to \code{rscale.cubinf} or to \code{summary.cubinf} or to \code{weights.cubinf}
- or to \code{covar.cubinf} (third usage) and respectively to \code{rscale.glm} or 
- or to \code{covar.glm} or to \code{weights.glm}
+  to \code{rscale.cubinf} or to \code{summary.cubinf} or to \code{weights.cubinf}
+  or to \code{covar.cubinf} (third usage) and respectively to \code{rscale.glm} or 
+  or to \code{covar.glm} or to \code{weights.glm}.
 }
   \item{ai}{Vector with components a_i=ufact/|Ax_i| (where x_i^T 
-    denotes the ith row of the model matrix)
+    denotes the ith row of the model matrix).
 }
-  \item{ci}{Vector (c) of the final bias corrections
+  \item{ci}{Vector of the final bias corrections.
 }
-  \item{A.mat}{The final value of the matrix A
+  \item{A.mat}{The final value of the matrix A.
 }
   \item{...}{
- further optional arguments according to the print method. Implicit argument in all these 
+ Further optional arguments according to the print method. Implicit argument in all these 
  functions is digits = max(3, .Options$digits - 3).
 }
 }

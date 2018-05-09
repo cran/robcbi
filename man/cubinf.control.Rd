@@ -5,9 +5,9 @@
 Control parameters for the function cubinf
 }
 \description{
-Allows the user to set values effecting the robust estimation procedure for discrete 
-generalized linear models implemented in the function cubinf(). Most control parameters 
-are parameters of the ROBETH subroutine GYMAIN (Marazzi, 1993) 
+Allows the user to set parameters affecting the estimation of 
+the discrete GLMs implemented in cubinf. Most control parameters 
+are parameters of the ROBETH subroutine GYMAIN (Marazzi, 1993). 
 }
 \usage{
 cubinf.control(tlo = 0.001, tua = 1e-06, mxx = 30, mxt = 10, mxf = 10, ntm = 0, gma = 1, 
@@ -17,10 +17,10 @@ cubinf.control(tlo = 0.001, tua = 1e-06, mxx = 30, mxt = 10, mxf = 10, ntm = 0, 
 
 \arguments{
   \item{tlo}{Relative precision for the convergence criterion of the main algorithm (GYMAIN) 
-    called by cubinf(). The relative precision for the convergence criterion in the lower level 
+    called by cubinf. The relative precision for the convergence criterion in the lower level 
     steps (theta-step, A-step and c-step) is '10*tlo'. 
 }
-  \item{tua}{Tolerance used for the determination of pseudo-rank. 
+  \item{tua}{Tolerance used for the determination of the pseudo-rank. 
 }
   \item{mxx}{Maximum number of cycles for the main algorithm. 
 }
@@ -38,23 +38,22 @@ cubinf.control(tlo = 0.001, tua = 1e-06, mxx = 30, mxt = 10, mxf = 10, ntm = 0, 
     See Marazzi, 1993, for details. 
 }
   \item{ipo}{Parameter for the choice of the steplength algorithm in the theta-step.
-    If 'ipo=1' (default) a quadratic comparison function is minimized.
+    If 'ipo=1', a quadratic comparison function is minimized.
     If 'ipo=2', the Goldstein-Armijo step length algorithm is used. 
 }
   \item{ilg}{Parameter for the choice of the algorithm in the c-step.
     If 'ilg=1', the H-algorithm is used.
     If 'ilg=2', the W-algorithm is used.
 }
-  \item{icn}{Parameter for the choice of the convergence criterion for the theta-step and the 
-     main algorithm.
-     If 'icn=1' (default), convergence is assumed when the change in each coefficient is less than 
-      the tolerance ('10*tlo') times an estimate of the coefficient variance. See Marazzi (1993, p. 281), 
-      for other options ('icn=2' and 'icn=3'). 
+  \item{icn}{Parameter for the choice of the convergence criterion for the theta-step and the main algorithm.
+     If 'icn=1', convergence is assumed when the change in each coefficient is less than 
+     the tolerance ('10*tlo') times an estimate of the coefficient variance. 
+     See Marazzi (1993, p. 281), for the other options ('icn=2' and 'icn=3'). 
 }
-  \item{icv}{Parameter for the choice of the convergence criterion for the A-step. If 'icv=1' 
-     (default), convergence is assumed when the norm of the difference between two consecutive 
-      values of A is less than the tolerance (10*tol).
-      See Marazzi (1993, p.288 and p. 301), for another option ('icv=2'). 
+  \item{icv}{Parameter for the choice of the convergence criterion for the A-step. 
+    If 'icv=1', convergence is assumed when the norm of the difference between two consecutive 
+    values of A is less than the tolerance (10*tol).
+    See Marazzi (1993, p.288 and p. 301), for another option ('icv=2'). 
 }
   \item{ufact}{The tuning constant b is set equal to ufact*sqrt(p), where p is the dimension of 
     the observation vectors. The default value of b is 1.1*sqrt(p); this value is used when 'ufact=0' on input. 

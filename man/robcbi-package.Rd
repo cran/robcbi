@@ -6,7 +6,7 @@ Robust fit for discrete generalized linear model
 }
 \description{
 Conditionally unbiased bounded influence estimates as described in Kuensch et al.  
-(1989) in three special cases of the generalized linear model: Bernoulli, Binomial,  
+(1989) in three special cases of the Generalized Linear Model: Bernoulli, Binomial,  
 and Poisson distributed responses. 
 }
 \details{

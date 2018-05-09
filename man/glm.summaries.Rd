@@ -5,12 +5,11 @@
 \alias{weights.glm}
 
 \title{
-New accessor functions for linear model fits of glm class
+Accessor functions for objects the class "glm"
 }
 \description{
-All these functions are methods, respectively the covariance matrix of the 
-parameter estimates, the rank, the scale estimate and the computed weights 
-for class "glm" objects. 
+Covariance matrix of the coefficient estimates, rank, scale estimate and the weights 
+for class "glm" objects. All these functions are methods.
 
 }
 
@@ -26,26 +25,14 @@ for class "glm" objects.
 
 \arguments{
   \item{object}{
-an object inheriting from class glm, usually the result of a call to \code{glm}}
+An object inheriting from class "glm".}
 
 }
 
 \details{
 The generic accessor functions \code{coef}, \code{residuals}, \code{fitted}, \code{formula}, 
 \code{deviance}, \code{rscale}, \code{covar}, \code{correl}, \code{weights} 
-and \code{Rank} can be used to extract various useful features of the value returned by 
- \code{glm}. 
-}
-
-
-\references{
-Marazzi, A. (1993). \emph{Algorithms, Routines, and S-functions for robust Statistics.}
-Chapman and Hall, New York.
-
-Kuensch, H.R., Stefanski L.A., Carroll R.J. (1989).
-Conditionally unbiased bounded-influence estimation in general regression models,
-with application to generalized linear models. 
-Journal of the American Statistical Association, 84, 460-466.
+and \code{Rank} can be used to extract elements from an object returned by \code{glm}. 
 }
 
 \seealso{

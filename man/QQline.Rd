@@ -5,7 +5,7 @@
 Add a theoretical QQ-line in a plot
 }
 \description{
-Adds a QQ-line from the values in x in the current plot.
+Adds a QQ-line for the values in x in the current plot.
 }
 \usage{
 QQline(x, ...)
@@ -13,7 +13,7 @@ QQline(x, ...)
 \arguments{
   \item{x}{The sample for QQ-line
 }
-  \item{\dots}{graphical parameters
+  \item{\dots}{Graphical parameters
 }
 }
 

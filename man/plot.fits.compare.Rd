@@ -2,10 +2,10 @@
 \alias{plot.fits.compare}
 
 \title{
-Plot linear model fits comparison 
+Plots for comparing fits 
 }
 \description{
-Plots the results of a call to fits.compare(). 
+Plots the results of a call to fits.compare. 
 Plotting the "fits.compare" object results in a sequence of graphical
 displays. These displays are designed to be of use in comparing two sets of 
 parameter estimates in linear models.
@@ -18,8 +18,7 @@ parameter estimates in linear models.
 
 \arguments{
   \item{x}{
-an object inheriting from class "fits.compare", the result of a call to 
-\code{fits.compare}. 
+An object inheriting from class "fits.compare", the result of a call to \code{fits.compare}. 
 }
 
   \item{xplots}{
@@ -27,27 +26,17 @@ an object inheriting from class "fits.compare", the result of a call to
 }
 
   \item{\dots}{
- further arguments passed to or from \code{plot} method.
+ Further arguments passed to or from \code{plot} method.
 }
   \item{ask}{
 Graphical parameter, if TRUE (and the R session is interactive) the user is asked for 
-input, before a new figure is drawn
+input, before a new figure is drawn.
 }
 }
 \details{
-It is not recommended to compare objects with different structure.
+It is not recommended to compare objects with different structures.
 }
 
-\references{
-Kuensch, H.R., Stefanski L.A., Carroll R.J. (1989).
-Conditionally unbiased bounded-influence estimation in general regression models,
-with application to generalized linear models. 
-Journal of the American Statistical Association, 84, 460-466.
-
-Marazzi, A. (1993).
-Algorithms, Routines, and S-functions for robust Statistics.
-Chapman and Hall, New York.
-}
 
 \seealso{
 The model fitting function \code{\link{glm}}, \code{\link{cubinf}}

@@ -9,13 +9,9 @@
 \alias{weights.cubinf}
 
 \title{
-Accessing linear model fits of cubinf class
+Functions required by the corresponding access functions 
 }
-\description{
-All these functions are methods, respectively the summary, the covariance matrix of the 
-parameter estimates,the deviance, the family (model of function used by glm), the residuals, 
-the rank, the scale estimate and the computed weights for class "cubinf" objects. 
-
+\description{Auxiliary functions for residuals(), summary(), covar(), deviance(), family(), Rank(), rscale(), weights().
 }
 
 \usage{
@@ -37,54 +33,37 @@ the rank, the scale estimate and the computed weights for class "cubinf" objects
 } 
 
 \arguments{
-  \item{object}{
-an object inheriting from class cubinf, usually the result of a call to \code{glm} were 
-\code{method="cubinf"}. 
-}
- \item{type}{A character string for the residuals type}
- \item{\dots}{Optional arguments. For summary  can be correlation=TRUE}
+ \item{object}{An object inheriting from class "cubinf".} 
+ \item{type}{A character string for the residual type.}
+ \item{\dots}{Optional arguments. For summary, it can be correlation=TRUE.}
 }
 
 
 \details{
-The generic accessor functions \code{coef}, \code{residuals}, \code{fitted}, \code{formula}, 
+The generic functions \code{coef}, \code{residuals}, \code{fitted}, \code{formula}, 
 \code{deviance}, \code{rscale}, \code{r.squared}, \code{covar}, \code{correl}, \code{weights} 
-and \code{Rank} can be used to extract various useful features of the value returned by 
- \code{glm}. 
-The old function  
+and \code{Rank} can be used to extract elements from an object of class "cubinf" returned by \code{glm}. 
 The class "lm" functions \code{effects}, \code{alias}, \code{add1}, \code{drop1}, code{kappa},
 \code{proj}, \code{step}, \code{influence}, \code{anova} and \code{sensitivity} are not
 implemented to objects of class "cubinf".
 }
 
 \value{
-For summary.cubinf a list is returned with the following components: 
-\item{terms }{The terms object used in fitting this model. }
+summary.cubinf returns a list with the following components: 
+\item{call }{The model formula used in glm. }
+\item{terms }{Terms object used in fitting the model. }
 \item{coefficients }{A matrix with three columns, containing the coefficients, their 
  standard errors and the corresponding t-statistics.}
 \item{dispersion }{Dispersion coefficient } 
-\item{df }{The number of degrees of freedom for the model and for the residuals. }
-\item{deviance.resid }{The deviance residuals}
-\item{family }{The family function used: binomial() or poisson()}
-\item{cov.unscaled }{Unscaled covariance matrix; i.e, a matrix such that multiplying it by 
- an estimate of the error variance produces an estimated covariance matrix for the 
- coefficients. }
-\item{correlation }{Correlation coefficient matrix for the coefficients in the model.}
-\item{deviance }{The vector of deviance. }
-\item{null.deviance }{The vector of deviance for the model with only an intercept. }
-\item{iter }{The number of iterations required to compute the coefficient estimates. }
-\item{nas }{A logical vector whose i-th component is equal to TRUE if the i-th coefficient 
-is NA. }
-}
-
-\references{
-Marazzi, A. (1993). \emph{Algorithms, Routines, and S-functions for robust Statistics.}
-Chapman and Hall, New York.
-
-Kuensch, H.R., Stefanski L.A., Carroll R.J. (1989).
-Conditionally unbiased bounded-influence estimation in general regression models,
-with application to generalized linear models. 
-Journal of the American Statistical Association, 84, 460-466.
+\item{df }{Degrees of freedom for model and residuals. }
+\item{deviance.resid }{Deviance residuals}
+\item{family }{The family function used: binomial or poisson}
+\item{cov.unscaled }{Unscaled covariance matrix of coefficient estimates.}
+\item{correlation }{Correlation matrix of coefficient estimates.}
+\item{deviance }{Deviance.}
+\item{null.deviance }{Null deviance. }
+\item{iter }{Number of iterations of the main algorithm. }
+\item{nas }{A logical vector whose i-th component is TRUE if the i-th coefficient is NA. }
 }
 
 \seealso{

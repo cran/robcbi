@@ -8,7 +8,7 @@ Breslow Data
  Patients suffering from simple or complex partial seizures were randomized to receive 
  either the antiepileptic drug progabide or a placebo. At each of four successive
  postrandomization clinic visits, the number of seizures occuring over the previous 
- two weeks was reported
+ two weeks was reported.
 }
 \usage{
 data(Breslow)
@@ -17,10 +17,10 @@ data(Breslow)
 \format{
  A data frame with 59 observations and the following 4 variables 
   \describe{
-    \item{Trt}{the treatment: a factor with levels "placebo" and "progabide"}
-    \item{sumY}{aninteger value, the sum of seizures during the 1st, 2nd, 3rd and 4th two week periods}
-    \item{Age10}{Age divided by 10}
-    \item{Base4}{the eight-week baseline seizure count divided by 4}
+    \item{Trt}{The treatment: a factor with levels "placebo" and "progabide".}
+    \item{sumY}{An integer value, the sum of seizures during the 1st, 2nd, 3rd and 4th two week periods.}
+    \item{Age10}{Age divided by 10.}
+    \item{Base4}{The eight-week baseline seizure count divided by 4.}
 }}
 
 

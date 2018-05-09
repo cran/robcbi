@@ -2,32 +2,32 @@
 \alias{predict.cubinf}
 
 \title{
-Predictions from a cubnf object
+Prediction methods for objects of class "cubinf"
 }
 \description{
-Predictions from the results of a generalized linear model fit when method is cubinf}
+Predictions provided by a model fit when method is "cubinf".}
 \usage{
 \method{predict}{cubinf}(object, newdata, type = c("link", "response", "terms"), 
    se.fit = FALSE, terms = labels(object$terms), ...)
 }
 
 \arguments{
-  \item{object}{a cubinf object for which prediction is desired.
+  \item{object}{An object of class "cubinf" for which predictions are desired.
 }
-  \item{newdata}{Specify the explanatory variables to beused
+  \item{newdata}{Specify the explanatory variables to used.
 }
-  \item{type}{The prediction type
+  \item{type}{The prediction type.
 }
-  \item{se.fit}{Logical to specify if standard errors are returned or not
+  \item{se.fit}{Logical to specify if standard errors are returned or not.
 }
-  \item{terms}{The terms in newdata
+  \item{terms}{The terms in newdata.
 }
-  \item{\dots}{additional arguments affecting the predictions produced
+  \item{\dots}{Additional arguments affecting the predictions produced.
 }
 }
 
 \value{
-The value returned depends on type
+The value returned depends on type.
 }
 \references{
 Marazzi, A. (1993). \emph{Algorithms, Routines, and S-functions for robust Statistics.}
