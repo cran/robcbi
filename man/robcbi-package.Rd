@@ -1,8 +1,9 @@
 \name{robcbi-package}
 \alias{robcbi-package}
+\alias{robcbi}
 \docType{package}
 \title{
-Robust fit for discrete generalized linear model
+Robust Fit for Discrete Generalized Linear Model
 }
 \description{
 Conditionally unbiased bounded influence estimates as described in Kuensch et al.  
@@ -12,8 +13,7 @@ and Poisson distributed responses.
 \details{
 \tabular{ll}{
 Package: \tab cubinf\cr
-Type: \tab Package\cr
-Version: \tab 1.1\cr
+Version: \tab 1.0\cr
 Date: \tab 2013-07-04\cr
 License: \tab  GPL (>= 2)\cr
 }
@@ -34,6 +34,8 @@ Marazzi, A. (1993).
 Algorithms, Routines, and S-functions for robust Statistics.
 Chapman and Hall, New York.
 }
+\keyword{ package }
+\keyword{ robust}
 
 \examples{
  library(robcbi)
@@ -90,5 +92,4 @@ Chapman and Hall, New York.
  Rn2
 }
 
-\keyword{ package }
 
