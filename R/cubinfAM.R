@@ -114,8 +114,8 @@ cubinf <- function(x, y, weights = NULL, start=NULL, etastart=NULL, mustart=NULL
         else Null.dev <- NULL 
 #
 #  Initial theta, A (A0) and c (c0)
-#       tmp <- tempfile("cub"); zf <- file(tmp, open="wt")
-        sink("tmpzzz", type="output") #Redirection of message 460 in RYWALG
+        zdir <- tempdir(); tmpcbi <- tempfile("Rcbi",zdir)
+        sink(tmpcbi, type="output") #Redirection of message 460 in RYWALG
         if (ufact >= 20) cpar <- 20*cpar
         z      <- gintac(x, y, ni, offset, icase=ics, tolt=10*tlo,tola=10*tlo, b=upar, c=cpar)
         theta0 <- z$theta[1:rank]; A0 <- z$a;  c0 <- z$ci
@@ -145,6 +145,7 @@ cubinf <- function(x, y, weights = NULL, start=NULL, etastart=NULL, mustart=NULL
                 icnva=icv, maxit=mxx, maxtt=mxt, maxta=mxf, maxtc=mxt, 
                 nitmnt=ntm, nitmna=ntm, tol=tlo, tolt=10*tlo, tola=10*tlo, tolc=10*tlo)
         sink()
+        unlink(tmpcbi,force=TRUE)
         nit  <- zf$nit; converged <- TRUE
         if (mxx > 1 && nit == mxx) {cat("\nWarning: Maximum number of iterations [mxx=", mxx,"] reached.\n")
                                    converged <- FALSE}
@@ -301,10 +302,11 @@ function(x, y, ni, offset, ics, family, control)
 #                 ci <- rep(cval,ly); ai <- rep(9999.,ly) } else {
            X    <- matrix(rep(1,ly),ncol=1)
            if (ufact >= 20) cpar <- 20*cpar
-           sink("tmpzzz", type="output")#Redirection of message 460 in RYWALG
+           zdir <- tempdir(); tmpcbi <- tempfile("Rcbi",zdir)
+           sink(tmpcbi, type="output") #Redirection of message 460 in RYWALG
            z    <- gintac(X, y, ni, offset, icase = ics, tolt=10*tlo,
                    tola=10*tlo, b = upar, c = cpar)
-#           sink(); unlink(tmp)     
+    
            t0   <- z$theta[1]; A0 <- z$a; c0 <- z$ci
            wa   <- upar/pmax(1.e-3,z$dist)
            vtheta <- rep(t0,ly)
@@ -318,7 +320,7 @@ function(x, y, ni, offset, ics, family, control)
                    icnva=icv, maxit=mxx, maxtt=mxt, maxta=mxf, maxtc=mxt, 
                    nitmnt=ntm, nitmna=ntm, tol=tlo, tolt=10*tlo, tola=10*tlo, 
                    tolc=10*tlo)
-           sink()
+           sink(); unlink(tmpcbi,force=TRUE)
            ai   <- zf$wa
            ci   <- zf$ci
            eta  <- zf$vtheta

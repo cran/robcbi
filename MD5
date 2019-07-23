@@ -1,4 +1,4 @@
-79058761620074513a9427c1ff2a5e6b *DESCRIPTION
+411ccd16fcb56a44d7d0e68790ac18c8 *DESCRIPTION
 9bd9a65d73f791b81c4c707322513fd9 *NAMESPACE
 6737d35b6a070d3b7e271f8c36c1ab62 *R/QQline.R
 0572a5dd57ef24b62ef8558deb31fcb3 *R/Rank.R
@@ -12,7 +12,7 @@ f10e3b7094c66cbd1252feeb831ccaa7 *R/correl.R
 0377157ab0d2f46dff5735649b3cbc41 *R/covar.R
 d27f2add92e339ba3e0ab7542ae2db38 *R/covar.cubinf.R
 f0754d3e47cc22c294b676c1b65abca4 *R/covar.glm.R
-30bd9d92bd2f217ffc850875674ae963 *R/cubinfAM.R
+93ab267060aa5d82beb8af0e2e5a8c7d *R/cubinfAM.R
 f383ea4c781ecf144aea500e16a2d53d *R/deviance.cubinf.R
 7930dd1147a026c0f69d75d29318ae09 *R/drop1.R
 dfc85efd3d795af56213407d5001db0b *R/drop1.cubinf.R
