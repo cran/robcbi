@@ -1,8 +1,8 @@
 Package: robcbi
 Type: Package
 Title: Conditionally Unbiased Bounded Influence Estimates
-Version: 1.1-3
-Date: 2019-07-23
+Version: 1.1-4
+Date: 2023-08-21
 Depends: R (>= 3.2.0)
 Author: Alfio Marazzi <Alfio.Marazzi@unisante.ch>
 Maintainer: A. Randriamiharisoa <exelami@gmail.com>
@@ -13,7 +13,7 @@ Imports: robeth, stats, graphics, utils
 License: GPL (>= 2)
 LazyLoad: yes
 LazyData: yes
-Packaged: 2019-07-23 10:53:54 UTC; arandria
+Packaged: 2023-08-21 15:00:11 UTC; Alex
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2019-07-23 15:00:05 UTC
+Date/Publication: 2023-08-21 17:20:02 UTC

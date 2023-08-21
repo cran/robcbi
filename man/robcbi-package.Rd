@@ -13,8 +13,8 @@ and Poisson distributed responses.
 \details{
 \tabular{ll}{
 Package: \tab cubinf\cr
-Version: \tab 1.0\cr
-Date: \tab 2013-07-04\cr
+#Version: \tab 1.0\cr
+#Date: \tab 2013-07-04\cr
 License: \tab  GPL (>= 2)\cr
 }
 }

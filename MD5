@@ -1,4 +1,4 @@
-411ccd16fcb56a44d7d0e68790ac18c8 *DESCRIPTION
+ad1e0bbf96931676c8a9a9b33865046f *DESCRIPTION
 9bd9a65d73f791b81c4c707322513fd9 *NAMESPACE
 6737d35b6a070d3b7e271f8c36c1ab62 *R/QQline.R
 0572a5dd57ef24b62ef8558deb31fcb3 *R/Rank.R
@@ -53,4 +53,4 @@ a9ce0cfb182d3416d274ff9c86a9e350 *man/fits.compare.Rd
 df38e247a2b398c4056674a5c72f6231 *man/plot.fits.compare.Rd
 d98234d39e144a52d73febd4ed8587db *man/predict.cubinf.Rd
 7b58f54ef2c8594249bb122d9c5fa6f6 *man/print.summaries.Rd
-3da04802a2c6e4e9206803b713eaa0b5 *man/robcbi-package.Rd
+7addfd4ee3e0ed2caa704120cbeb82bb *man/robcbi-package.Rd
